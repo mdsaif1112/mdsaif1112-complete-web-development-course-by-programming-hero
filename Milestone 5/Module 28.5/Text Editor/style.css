@@ -1,0 +1,26 @@
+.textarea{
+    max-width: 95vw;
+}
+
+textarea{
+    padding: 10px;
+    text-transform: normal;
+    width: 100%;
+    height: 300px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.transform{
+    text-transform: uppercase;
+}

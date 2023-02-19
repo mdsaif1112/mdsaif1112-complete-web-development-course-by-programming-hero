@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .calender {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(7, 70px);
+            grid-template-rows:  70px repeat(6, 70px);
+            justify-content: center;
+            align-items: stretch;
+            grid-gap: 15px;
+        }
+        .day, .date{
+            border: 1px solid lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            font-family: sans-serif;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .date:hover{
+            color: white;
+            background-color:rgb(3, 110, 110);
+        }
+
+        .other-date:hover{
+            color: white;
+            background-color:rgb(151, 216, 216);
+        }
+        .day{
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        .day:hover{
+            background: gray;
+            color: aliceblue;
+        }
+        .other-date{
+            background-color: lightgray;
+            color: rgb(160, 160, 160);
+        }
+        .friday{
+            background: red;
+        }
+        .friday:hover{
+            color: white;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="calender">
+        <div class="container">
+            <div class="day day-1">S</div>
+            <div class="day day-2">M</div>
+            <div class="day day-3">T</div>
+            <div class="day day-4">W</div>
+            <div class="day day-5">T</div>
+            <div class="day day-6 friday">F</div>
+            <div class="day day-7">S</div>
+            <div class="date other-date other-date-28">28</div>
+            <div class="date other-date other-date-29">29</div>
+            <div class="date other-date other-date-30">30</div>
+            <div class="date date-1">1</div>
+            <div class="date date-2">2</div>
+            <div class="date date-3">3</div>
+            <div class="date date-4">4</div>
+            <div class="date date-5">5</div>
+            <div class="date date-6">6</div>
+            <div class="date date-7">7</div>
+            <div class="date date-8">8</div>
+            <div class="date date-9">9</div>
+            <div class="date date-10">10</div>
+            <div class="date date-11">11</div>
+            <div class="date date-12">12</div>
+            <div class="date date-13">13</div>
+            <div class="date date-14">14</div>
+            <div class="date date-15">15</div>
+            <div class="date date-16">16</div>
+            <div class="date date-17">17</div>
+            <div class="date date-18">18</div>
+            <div class="date date-19">19</div>
+            <div class="date date-20">20</div>
+            <div class="date date-21">21</div>
+            <div class="date date-22">22</div>
+            <div class="date date-23">23</div>
+            <div class="date date-24">24</div>
+            <div class="date date-25">25</div>
+            <div class="date date-26">26</div>
+            <div class="date date-27">27</div>
+            <div class="date date-28">28</div>
+            <div class="date date-29">29</div>
+            <div class="date date-30">30</div>
+            <div class="date date-31">31</div>
+            <div class="date other-date other-date-1">1</div>
+            <div class="date other-date other-date-2">2</div>
+            <div class="date other-date other-date-3">3</div>
+            <div class="date other-date other-date-4">4</div>
+        </div>
+    </section>
+</body>
+
+</html>

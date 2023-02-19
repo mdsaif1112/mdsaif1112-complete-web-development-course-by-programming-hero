@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title capitalize>Bank</title capitalize>
+    <!-- TailWind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="bank mt-20">
+            <div class="bank__container container mx-auto bg-cyan-500 text-white p-20 rounded-md text-center">
+                <div class="section__output mb-12">
+                    <div class="output__container grid grid-cols-3 gap-5">
+                        <div class="diposit bg-purple-400 rounded-md p-10">
+                            <h2 class="title mb-2 capitalize text-3xl">Diposit</h2>
+                            <h2 class="text-3xl">$<span id="diposit__value">00</span></h2>
+                        </div>
+                        <div class="withdraw bg-pink-400 rounded-md p-10">
+                            <h2 class="title mb-2 capitalize text-3xl">withdraw</h2>
+                            <h2 class="text-3xl">$<span id="withdraw__value">00</span></h2>
+                        </div>
+                        <div class="balance bg-blue-400 rounded-md p-10">
+                            <h2 class="title mb-2 capitalize text-3xl">balance</h2>
+                            <h2 class="text-3xl">$<span id="balance__value">2000</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__input">
+                    <div class="input__container grid grid-cols-2 gap-5">
+                        <div class="diposit bg-black rounded-md p-10">
+                            <h2 class="title mb-2 capitalize text-3xl">Diposit</h2>
+                            <div class="input__form flex flex-row justify-center gap-4 mt-5">
+                                <input type="number" name="" id="diposit__input"
+                                    class="w-96 rounded-sm p-3 focus:outline-none h-full text-black" placeholder="00">
+                                <button id="diposit__btn"
+                                    class="btn text-lg font-semibold text-white py-1 px-7 bg-black border-2 border-white rounded-sm hover:bg-white hover:text-black transition-all ease-in-out duration-200">
+                                    Disposit
+                                </button>
+                            </div>
+                        </div>
+                        <div class="withdraw bg-black rounded-md p-10">
+                            <h2 class="title mb-2 capitalize text-3xl">withdraw</h2>
+                            <div class="input__form flex flex-row justify-center gap-4 mt-5">
+                                <input type="number" name="" id="withdraw__input"
+                                    class="w-96  rounded-sm p-3 focus:outline-none h-full text-black font-semibold" placeholder="00">
+                                <button id="withdraw__btn"
+                                    class="btn text-lg font-semibold text-white py-1 px-7 bg-black border-2 border-white rounded-sm hover:bg-white hover:text-black transition-all ease-in-out duration-200">
+                                    withdraw
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Utilities Js -->
+    <script src="scripts/utilities.js"></script>
+    <!-- Diposit Js -->
+    <script src="scripts/diposit.js"></script>
+    <!-- Withdraw Js -->
+    <script src="scripts/withdraw.js"></script>
+</body>
+
+</html>

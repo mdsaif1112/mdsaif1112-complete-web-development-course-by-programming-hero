@@ -1,0 +1,412 @@
+/* Common Styles */
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Telex', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'Telex', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444343;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    color: #151414;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #151414;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #fff;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #005FAC;
+    background-color: #fff;
+    padding: 13px 25px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005FAC;
+    color: #fff;
+}
+
+.container {
+    width: 1340px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Styles */
+
+header {
+    background: url(../images/banner/banner3.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-container {
+    width: 1340px;
+}
+
+header .header-container>* {
+    width: 50%;
+}
+
+header .header-container .header-right {
+    text-align: right;
+}
+
+header .header-container .header-title {
+    margin-bottom: 30px;
+}
+
+header .header-container .header-desc {
+    color: #fff;
+    margin-bottom: 30px;
+    padding-left: 100px;
+}
+
+/* Failure Styles */
+
+main .failure {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F9FA;
+}
+
+main .failure .failure-container {
+    gap: 70px;
+}
+
+main .failure .failure-container>* {
+    width: 50%;
+}
+
+main .failure .failure-container .failure-img img {
+    width: 100%;
+}
+
+main .failure .failure-container .failure-content {
+    padding-left: 30px;
+}
+
+main .failure .failure-container .failure-content .failure-title {
+    margin-bottom: 30px;
+}
+
+main .failure .failure-container .failure-content .failure-desc {
+    margin-bottom: 20px;
+}
+
+main .failure .failure-container .failure-content .failure-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .failure .failure-container .failure-content .failure-ul li a {
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: none;
+    font-family: 'Telex', sans-serif;
+    word-spacing: 2px;
+}
+
+main .failure .failure-container .failure-content .failure-ul li a i {
+    color: #16D887;
+    margin-right: 3px;
+}
+
+/* Achievement */
+
+main .achievement {
+    padding: 100px 0;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+main .achievement .achievement-title {
+    margin-bottom: 50px;
+}
+
+main .achievement .achievement-container {
+    gap: 100px;
+}
+
+main .achievement .achievement-container>* {
+    width: 50%;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container .achievement-box {
+    padding: 30px 30px;
+    border: 1px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    width: 49%;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container .achievement-box:hover{
+    box-shadow: none;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container .achievement-box img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container .achievement-box .achievement-box-title{
+    margin-bottom: 10px;
+}
+
+main .achievement .achievement-container .achievement-content .achievement-box-container .achievement-box .achievement-box-desc{
+    text-align: justify;
+}
+
+main .achievement .achievement-container .achievement-img img{
+    width: 550px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+/* Plans Styles */
+
+main .plans {
+    padding: 100px 0;
+    background: #F8F9FA;
+}
+
+main .plans .plans-container {
+    width: 1340px;
+    margin: auto;
+    text-align: center;
+}
+
+main .plans .plans-container .plans-title {
+    margin-bottom: 60px;
+}
+
+main .plans .plans-container .plan-box-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+main .plans .plans-container .plan-box-container .plan-box {
+    padding: 70px 30px;
+    width: 23%;
+    border: 1px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: all 0.3s ease;
+    background: #fff;
+    border-radius: 5px;
+}
+
+main .plans .plans-container .plan-box-container .plan-box:hover {
+    box-shadow: none;
+}
+
+main .plans .plans-container .plan-box-container .plan-box img {
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+main .plans .plans-container .plan-box-container .plan-box .plan-box-title {
+    margin-bottom: 10px;
+}
+
+main .plans .plans-container .plan-box-container .plan-box .plan-box-desc {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #737272;
+}
+
+/* Contact Styles */
+
+main .contact {
+    padding: 100px 0;
+}
+
+main .contact .contact-container {
+    width: 1340px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(0, 95, 172, 1) 0%, rgba(0, 212, 255, 0) 100%), url(../images/watch.png);
+    padding: 80px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+}
+
+main .contact .contact-container>* {
+    width: 50%;
+}
+
+main .contact .contact-container .contact-left .contact-title {
+    color: #fff;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+
+footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+footer .footer-container>* {
+    width: 50%;
+}
+
+footer .footer-container .footer-content {
+    padding-right: 80px;
+}
+
+footer .footer-container .footer-content .footer-title {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+footer .footer-container .footer-content .footer-desc {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer .footer-container .footer-content .footer-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+footer .footer-container .footer-content .footer-ul li,
+footer .footer-container .footer-content .footer-ul li a {
+    color: #fff;
+    font-family: 'Telex', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+footer .footer-container .footer-content .social-icons {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+footer .footer-container .footer-content .social-icons a img {
+    width: 40px;
+}
+
+footer .footer-container .footer-form {
+    padding-left: 200px;
+}
+
+footer .footer-container .footer-form .footer-form-title {
+    margin-bottom: 30px;
+}
+
+footer .footer-container .footer-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+footer .footer-container .footer-form form input[type="email"] {
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: black;
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer .footer-container .footer-form form input[type="email"]:focus {
+    background: #fff;
+    color: #000;
+    outline: none;
+}
+
+footer .footer-container .footer-form form input[type="submit"]{
+    color: #000;
+}
+
+footer .footer-container .footer-form form input[type="submit"]:hover {
+    background-color: #000;
+    color: #fff;
+}

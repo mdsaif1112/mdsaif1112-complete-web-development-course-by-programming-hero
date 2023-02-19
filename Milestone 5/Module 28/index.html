@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- TailWind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login max-h-screen">
+        <div class="login__container container mx-auto p-20 mt-52 bg-cyan-500 rounded-md">
+            <h1 class="login__title text-white text-5xl text-center mb-10">
+                Please Login
+            </h1>
+            <div class="form flex flex-col items-center content-center gap-3">
+                <input type="email" name="" id="input__email" placeholder="Your E-mail" class="w-96 h-8 rounded-sm p-3 focus:outline-none">
+                <input type="password" name="" id="input__pass" placeholder="Your Password" class="w-96 h-8 rounded-sm p-3 focus:outline-none">
+                <button id="login__btn"
+                    class="btn text-lg font-semibold text-white mt-5 py-1 px-7 bg-cyan-500 border-2 border-white rounded-sm hover:bg-white hover:text-black transition-all ease-in-out duration-200">Log
+                    in</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login JS -->
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
