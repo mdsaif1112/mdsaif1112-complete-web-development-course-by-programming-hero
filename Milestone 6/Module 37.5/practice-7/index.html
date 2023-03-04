@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            grid-gap: 30px;
+        }
+        img{
+            width: 100%;
+        }
+        #thumbnail{
+            width: 300px;
+        }
+        #main-photo{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <img src="" alt="" id="thumbnail">
+        <img src="" alt="" id="main-photo">
+        <h1 id="title"></h1>
+    </div>
+    <div id="container"></div>
+
+    <!-- Js -->
+    <script src="practice7.js"></script>
+</body>
+</html>
